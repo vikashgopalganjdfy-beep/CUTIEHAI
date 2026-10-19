@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', cursive, system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes bounce-wiggle {
+  0%, 100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  25% {
+    transform: translateY(-18px) scale(0.95, 1.08) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(0) scale(1.05, 0.95);
+  }
+  75% {
+    transform: translateY(-8px) scale(0.98, 1.03) rotate(4deg);
+  }
+}
+
+@keyframes gudgudi-shake {
+  0% { transform: scale(1.1) rotate(0deg) translate(0, 0); }
+  20% { transform: scale(1.15) rotate(-12deg) translate(-8px, 6px); }
+  40% { transform: scale(1.18) rotate(14deg) translate(8px, -6px); }
+  60% { transform: scale(1.15) rotate(-10deg) translate(-6px, 4px); }
+  80% { transform: scale(1.12) rotate(12deg) translate(6px, -4px); }
+  100% { transform: scale(1) rotate(0deg) translate(0, 0); }
+}
+
+@keyframes rainbow-glow {
+  0% { filter: drop-shadow(0 0 15px rgba(255, 107, 139, 0.6)); }
+  33% { filter: drop-shadow(0 0 20px rgba(254, 215, 0, 0.7)); }
+  66% { filter: drop-shadow(0 0 20px rgba(78, 205, 196, 0.7)); }
+  100% { filter: drop-shadow(0 0 15px rgba(255, 107, 139, 0.6)); }
+}
+
+@keyframes sparkle-pulse {
+  0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.6; }
+  50% { transform: scale(1.2) rotate(180deg); opacity: 1; }
+}
+
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-bounce-wiggle {
+  animation: bounce-wiggle 1.2s ease-in-out infinite;
+}
+
+.animate-gudgudi {
+  animation: gudgudi-shake 0.45s ease-in-out infinite;
+}
+
+.rainbow-glow {
+  animation: rainbow-glow 3s linear infinite;
+}
+
+.sparkle-pulse {
+  animation: sparkle-pulse 2s ease-in-out infinite;
+}

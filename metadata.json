@@ -1,0 +1,6 @@
+{
+  "name": "Cutie",
+  "description": "Cutie - Interactive kids talking cat game with Hindi voice, bedtime lullabies, mealtime helper, and voice chat. Produced by Hello Group.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
